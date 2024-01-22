@@ -48,15 +48,11 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </div>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Item 1</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
+          <li><a class="text-[#FF4240] hover:text-blue-800 duration-300">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
         </ul>
       </div>
       <h2 class="text-3xl font-bold"> Hockey <span class="text-btn-color">’</span>s</h2>
@@ -83,10 +79,51 @@
 
 <!-- banner section -->
 
-<section>
+<section class="mt-5 ">
 
+  <div class="carousel w-full max-h-[78vh]">
+    <div id="slide1" class="carousel-item relative w-full bg-cover bg-center ">
+      <img src="./Images/1.png" class="w-full " />
+
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="./Images/2.png" class="w-full " />
+
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="./Images/3.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="./Images/4.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
 
 </section>
+
+<!-- meet all the heros  -->
+<div class="absolute bg-[#131318] text-white opacity-100  lg:max-w-[40%] px-6 text-left py-6 rounded-lg lg:left-[50%] lg:bottom-[15%]">
+  <h2 class="text-2xl font-extrabold">Meet all the heroes from the field </h2>
+  <p class="text-base font-medium pt-3 "> “A champion is someone who has faith and dedication and doesn’t let obstacles stand in their way.” </p>
+        </div>
+
+
 
 <!-- banner section end -->
 </header>
@@ -95,7 +132,54 @@
 
 
 
-<main></main>
+<main class="container mx-auto mt-[55%] lg:my-28">
+
+  <!-- hokey center content -->
+  <div class=" text-center  border border-dashed border-black border-l-0 border-r-0 py-10 space-y-5 ">
+    <h2 class="text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
+    <p class="text-base font-medium text-gray-500 max-w-[85%] lg:max-w-[40%] mx-auto">If you believe in yourself and have dedication & pride and never quit you’ll be a winner.The price of victory is high but so are the rewards.</p>
+  </div>
+
+<!-- progress section -->
+  <section class="my-14"> 
+
+                          <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 ">
+
+<div class="text-center space-y-3">
+  <div class="radial-progress text-primary" style="--value:50;" role="progressbar">50%</div>
+<h2 class="text-xl font-semibold ">Prayer Facility</h2>
+<p class="text-gray-500 max-w-[50%] mx-auto">“God answers the prayer we ought to have made, rather than the prayer we did make.”</p>
+
+</div>
+
+<div class="text-center space-y-3">
+  <div class="radial-progress bg-black hover:bg-zinc-500 duration-300 text-white " style="--value:90;" role="progressbar ">90%</div>
+  <h2 class="text-xl font-semibold ">Experienced Coach</h2>
+<p class="text-gray-500 max-w-[50%] mx-auto">One man practicing sportsmanship is far better than hundred teaching..</p>
+
+
+</div>
+
+<div class="text-center space-y-3">
+  <div class="radial-progress bg-primary text-primary-content border-4 border-primary" style="--value:70;" role="progressbar">70%</div>
+  <h2 class="text-xl font-semibold ">Senior Player</h2>
+<p class="text-gray-500 max-w-[50%] mx-auto"> The beauty of working together is that greatness multiplies.</p>
+
+</div>
+
+
+<div class="text-center space-y-3">
+  <div class="radial-progress bg-btn-color" style="--value:85;" role="progressbar">85%</div>
+  <h2 class="text-xl font-semibold ">Training Ground</h2>
+<p class="text-gray-500 max-w-[50%] mx-auto">We are looking good. we are only going to get better</p>
+
+</div>
+
+    </div>
+
+  </section>
+
+</main>
 
 
 
